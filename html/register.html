@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="../img" alt="Priceless" class="logo-img">
+                    </div>
+                    
+                    <div class= nav-links">
+                        <a href="./index.html" class="btn nav-link">Home</a>
+                        <a href="./shop.html" class="btn nav-link">Shop</a>
+                        <a href="./about.html" class="btn nav-link">About Us</a>
+                        <a href="./contact.html" class="btn nav-link">Contact</a>
+                    </div>
+    
+                    <div class="nav-actions">
+                        <a href="./login.html">
+                            <button class="btn btn-primary">Login</button>
+                        </a>
+                        <button class="menu-btn">
+                            <i data-lucide="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="page-container" >
+                <div class="reg-form-container">
+                    <form action="./submit" method="post">
+                        <h1>Registration Form</h1>
+                        <p>Please fill out the required information to register an account.</p>
+                        <fieldset>
+                            <label for="first-name">First Name: </label>
+                            <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                            <br>
+                            <label for="last-name">Last Name: </label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                            <br>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@xyzmail.com" required>
+                            <br>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" required>
+                            <br>
+                            <label for="password">Re-enter Password: </label>
+                            <input type="password" id="password" name="password" required>
+                            <br>
+                            <label for="date-of-birth">D.O.B.: </label>
+                            <input type="date" id="date-of-birth" name="date-of-birth" required>
+                            <br>
+                            <label>Select your gender</label>
+                            <div class="radio-container">
+                                <label for="male" ><input type="radio" id="male" name="gender" class="inline" required />Male</label>
+                                <label for="female"><input type="radio" id="female" name="gender" class="inline" required />Female</label>
+                            </div>
+                        </fieldset>
+                        <div class="sub-res-btn">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+
+                        <p>I already have an account, <a href="./login.html">Login</a></p>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer">
+                <p class="copyright">&copy; 2025 Priceless Undies Store. All rights reserved.</p>
+                <div class="policy-and-terms">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="policy-and-terms">Privacy Policy</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="policy-and-terms">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

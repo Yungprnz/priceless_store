@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style>
+            /* Basic CSS for sticky footer */
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /* Ensures body takes full viewport height */
+                margin: 0; /* Remove default body margin */
+            }
+            main {
+                flex-grow: 1; /* Allows main content to expand and push footer down */
+                /* Removed inline min-height: 84vh; from here */
+            }
+            /* Consider if page-container needs margin-top or padding-top instead of margin: 10rem auto; */
+            .page-container {
+                /* Adjust margin or padding as needed, but avoid fixed top/bottom margins that create space */
+                /* margin: 10rem auto; was removed to allow flex-grow to work */
+                padding: 2rem; /* Example padding */
+                max-width: 1200px; /* Example max-width */
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="../img" alt="Priceless" class="logo-img">
+                    </div>
+                    
+                    <div class= nav-links">
+                        <a href="./index.html" class="btn nav-link">Home</a>
+                        <a href="./shop.html" class="btn nav-link">Shop</a>
+                        <a href="./about.html" class="btn nav-link">About Us</a>
+                        <a href="./contact.html" class="btn nav-link">Contact</a>
+                    </div>
+    
+                    <div class="nav-actions">
+                        <a href="./register.html">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </a>
+                        <button class="menu-btn">
+                            <i data-lucide="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="page-container">
+                <div class="login-form-container">
+                    <form action="" method="get">
+                        <h1>Welcome back to Priceless Undies Store</h1>
+                        <p>Enter your details to login</p>
+                        <fieldset>
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@xyzmail.com" required>
+                            <br>
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" name="password" required>
+                        </fieldset>
+                        <div class="sub-res-btn">
+                            <input type="submit" value="Log In">
+                        </div>
+                    </form>
+                    <p>Forgot password, <a href="">Reset</a></p>
+                    <p>I don't have an account, <a href="./register.html">Create one</a></p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="footer">
+                <p class="copyright">&copy; 2025 Priceless Undies Store. All rights reserved.</p>
+                <div class="policy-and-terms">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="policy-and-terms">Privacy Policy</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="policy-and-terms">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
