@@ -189,6 +189,10 @@ h3 {
     font-size: 1.2em;
 }
 
+.shop-container {
+    padding: 0rem 8rem;
+}
+
 .panties-container,
 .boxers-container,
 .sleepwears-container {
@@ -196,6 +200,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .shop-boxers,
@@ -396,7 +401,7 @@ span {
 }
 
 .about-us-text p:last-of-type {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 
@@ -458,6 +463,14 @@ footer {
         padding: 0 1rem;
     }
 
+    .panties-container,
+    .boxers-container,
+    .sleepwears-container {
+        justify-content: center;
+    }
+
+
+
     p {
         font-size: 12px;
     }
@@ -509,16 +522,72 @@ footer {
         padding: 0 1em;
     }
 
+    .shop-container {
+        /* margin: 0 4rem; */
+        padding: 0 4rem;
+    }
+
+    .panties-container,
+    .boxers-container,
+    .sleepwears-container {
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+
+    .panties,
+    .boxers,
+    .sleepwear {
+        width: 300px;
+    }
+
+    .panties img,
+    .boxers img,
+    .sleepwear img {
+        width: 100%;
+    }
+
+    .item-details{
+        justify-content: space-between;
+    }
+
     .about-us-text {
         margin: 0 1rem;
     }
 
-
+    footer {
+        margin-top: 2rem;
+        bottom: 0;
+    }
 }
 
 
 /* For Laptops */
 @media screen and (min-width: 992px) {
+    .nav-container {
+        padding: 0 6rem ;
+    }
+    
+    .hero p,
+    .landing-text p {
+        margin: 1rem 6rem;
+        font-size: 1.5rem;
+    }
+
+    .shop-container {
+        /* margin: 0 4rem; */
+        padding: 0 8rem;
+    }
+
+    .panties,
+    .boxers,
+    .sleepwear {
+        width: 360px;
+    }
+
+    .about-us-text {
+        margin: 0 4rem;
+    }
+
     footer {
         bottom: 0;
     }   
