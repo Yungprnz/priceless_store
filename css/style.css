@@ -176,7 +176,9 @@ img {
 
 .shop-panties,
 .shop-boxers,
-.shop-sleepwears {
+.shop-sleepwears,
+.shop-singlets,
+.shop-also-available {
     margin-top: 1em;
 }
 
@@ -195,7 +197,9 @@ h3 {
 
 .panties-container,
 .boxers-container,
-.sleepwears-container {
+.sleepwears-container,
+.singlets-container,
+.also-available-container {
     padding-top: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -204,13 +208,17 @@ h3 {
 }
 
 .shop-boxers,
-.shop-sleepwears {
+.shop-sleepwears,
+.shop-singlets,
+.also-available {
     margin-top: 1em;
 }
 
 .panties-container p,
 .boxers-container p,
-.sleepwears-container p {
+.sleepwears-container p,
+.singlets-container p,
+.also-available-container p {
     text-align: center;
     font-weight: 700;
 }
@@ -450,6 +458,11 @@ footer {
         padding: 0 4px;
     }
 
+    .logo img {
+        width: 70px;
+        height: 40px;
+    }
+
     .hero p {    
         padding: 0 1rem;
     }
@@ -465,7 +478,9 @@ footer {
 
     .panties-container,
     .boxers-container,
-    .sleepwears-container {
+    .sleepwears-container,
+    .singlets-container,
+    .also-available-container {
         justify-content: center;
     }
 
@@ -522,6 +537,11 @@ footer {
         padding: 0 1em;
     }
 
+    .logo img {
+        width: 120px;
+        height: 60px;
+    }
+
     .shop-container {
         /* margin: 0 4rem; */
         padding: 0 4rem;
@@ -529,20 +549,26 @@ footer {
 
     .panties-container,
     .boxers-container,
-    .sleepwears-container {
+    .sleepwears-container,
+    .singlets-container,
+    .also-available-container {
         padding: 1rem 0;
         justify-content: space-between;
     }
 
     .panties,
     .boxers,
-    .sleepwear {
+    .sleepwear,
+    .singlets,
+    .also-available {
         width: 300px;
     }
 
     .panties img,
     .boxers img,
-    .sleepwear img {
+    .sleepwear img,
+    .singlets img,
+    .also-available img {
         width: 100%;
     }
 
@@ -580,7 +606,9 @@ footer {
 
     .panties,
     .boxers,
-    .sleepwear {
+    .sleepwear,
+    .singlets,
+    .also-available {
         width: 360px;
     }
 
